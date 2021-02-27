@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#app, .content-wrapper{
+    height: 100%;
+}
+
+.content-wrapper > div {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    & .header {
+        flex: 0 1 auto;
+    }
+
+    & .main-container {
+        flex: 1 1 auto;
+    }
+
+    & .footer {
+        flex: 0 1 auto;
+    }
+}
+
+body:nth-child(1) {
+    height: 800px;
+}
